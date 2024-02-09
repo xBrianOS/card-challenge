@@ -6,6 +6,7 @@
 
 body {
   background-color: hsl(47, 88%, 63%);
+  font-family: 'Figtree', sans-serif;
 }
 
 .card {
@@ -19,13 +20,101 @@ body {
   padding: 25px;
   background-color: #fff;
   width: 400px;
-  height: 500px;
+  height: auto;
   border-radius: 15px;
   border: 1px solid #000;
   box-shadow: 5px 8px 0px 1px #000;
+  transition: 1s;
+}
+
+.card__container:hover {
+  box-shadow: 12px 12px 0px 1px #000;
 }
 
 .card-image img {
   width: 100%;
   border-radius: 10px;
+}
+
+.card-sections {
+  margin: 14px 0;
+  background-color: hsl(47, 88%, 63%);
+  width: 75px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-sections p {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.date {
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card-title {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.paragraph {
+  font-weight: 600;
+  line-height: 1.5;
+  color: hsl(0, 0%, 50%);
+  margin-bottom: 14px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  width: 50px;
+}
+
+.author-name {
+  font-weight: 800;
+  margin-left: 12px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .card__container {
+    padding: 25px;
+    background-color: #fff;
+    width: 80%;
+    height: auto;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .author-img {
+    width: 30px;
+  }
+
+  .author-name {
+    font-size: 12px;
+  }
 }
