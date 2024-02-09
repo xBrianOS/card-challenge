@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -28,9 +28,33 @@
   </head>
   <body>
     <main>
-      <section>
-        <div class="card-image">
-          <img src="assets/images/illustration-article.svg" alt="a dev image" />
+      <section class="card">
+        <div class="card__container">
+          <div class="card-image">
+            <img
+              src="assets/images/illustration-article.svg"
+              alt="a dev image"
+            />
+          </div>
+          <div class="card-sections">
+            <p>Learning</p>
+          </div>
+          <div class="card__txt">
+            <p class="date">Published 21 Dec 2021</p>
+            <h3 class="card-title">HTML & CSS foundations</h3>
+            <p class="paragraph">
+              These languages are the backbone of every website, defining
+              structure, content, and presentation. Greg Hooper
+            </p>
+          </div>
+          <div class="author">
+            <img
+              src="assets/images/image-avatar.webp"
+              alt="a image from a men"
+              class="author-img"
+            />
+            <p class="author-name">Greg Hooper</p>
+          </div>
         </div>
       </section>
     </main>
